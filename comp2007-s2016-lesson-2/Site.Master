@@ -24,23 +24,25 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-default">
-        <a href="#" class="navbar-brand">User Editior</a>
-        <div class="container">
-            <ul class="nav navbar-nav">
-                <li><a href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                <li><a href="#"><i class="fa fa-list fa-lg"></i> List</a></li>
-                <li><a href="#"><i class="fa fa-user fa-lg"></i> My Account</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <form id="form1" runat="server">
-    <div class="container">
-        <asp:ContentPlaceHolder ID="mainContent" runat="server">
+        <nav class="navbar navbar-default">
+            <a href="#" class="navbar-brand">User Editior</a>
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li id="products" runat="server"><a href="Services.aspx"><i class="fa fa-list fa-lg"></i> Products</a></li>
+                    <li id="services" runat="server"><a href="Services.aspx"><i class="fa fa-list fa-lg"></i> Services</a></li>
+                    <li id="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-user fa-lg"></i> Contact</a></li>
+                    <li id="about" runat="server"><a href="About.aspx"><i class="fa fa-user fa-lg"></i> About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="mainContent" runat="server">
             
-        </asp:ContentPlaceHolder>
-    </div>
+            </asp:ContentPlaceHolder>
+        </div>
     </form>
+
 </body>
 </html>
